@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Gaudteqh Electronics</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/">gaudteQh</a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/contact.html" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1>Contact & Booking</h1>
+    <p>Phone: <a href="tel:+16829904994">(682) 990-4994</a></p>
+    <p>Address: 2206 Plum Ln, Arlington, TX 76010</p>
+
+    <h2>Request a quote</h2>
+    <!--
+      Form is configured for Netlify Forms by default. To use Netlify Forms:
+        - Host this site on Netlify and the form will be captured automatically.
+      Fallback: If you prefer Formspree, set the form 'action' attribute to your
+      Formspree endpoint (e.g. https://formspree.io/f/<your-id>) and remove data-netlify attributes.
+    -->
+    <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="">
+      <!-- Netlify hidden inputs -->
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <label for="name">Name</label>
+      <input id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">What do you need?</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button class="btn primary" type="submit">Send Request</button>
+    </form>
+
+    <div id="success" class="hidden">Thanks — we will contact you shortly.</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="/">gaudteQh</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <address>
+          2206 Plum Ln, Arlington, TX 76010<br>
+          <a href="tel:+16829904994">(682) 990-4994</a>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>
